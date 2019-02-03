@@ -1,1 +1,2 @@
-perl -c 
+print "Hello world"
+ 
