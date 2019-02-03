@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Karthik has updated in dev1 branch!" );
+        System.out.println( "File updated in Master branch!" );
     }
 }
