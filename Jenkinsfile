@@ -1,20 +1,20 @@
 pipeline{
 	agent any
 	stages{
-		stage("Build Stage"){
+		stage("PerlFiles"){
 			when { 
-				changelog 'Build'
+				changeset '*.pl'
 			}
 			steps{
-				echo "Yes, change log contains Build message...."
+				echo "Yes, commit files contain perl files"
 			}
 		}
-		stage("Deploy stage"){
+		stage("Java"){
 			when { 
-				changelog 'Deploy'
+				changeset '*.java'
 			}
 			steps{
-				echo "This stage will use for Deploy"
+				echo "Yes, commit files contain Java files"
 			}
 		}
 	}
