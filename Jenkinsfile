@@ -11,10 +11,10 @@ pipeline{
 		}
 		stage("Java"){
 			when { 
-				changeset '*.java'
+				changeset '*.xml'
 			}
 			steps{
-				echo "Yes, commit files contain Java files"
+				echo "Yes, commit files contain xml files"
 			}
 		}
 	}
